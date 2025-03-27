@@ -1,0 +1,48 @@
+{
+  "name": "neuron",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npx tsx server.ts\" \"next dev\"",
+    "dev:frontend": "next dev",
+    "dev:backend": "npx tsx server.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "npx prettier --write .",
+    "check": "npx prettier --check ."
+  },
+  "dependencies": {
+    "@types/quill": "^2.0.14",
+    "express": "^4.21.2",
+    "next": "15.2.4",
+    "quill": "^2.0.3",
+    "quill-cursors": "^4.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-yjs": "^2.0.1",
+    "socket.io-client": "^4.8.1",
+    "ws": "^8.18.1",
+    "y-quill": "^1.0.0",
+    "y-webrtc": "^10.3.0",
+    "y-websocket": "^2.1.0",
+    "yjs": "^13.6.24"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/express": "^5.0.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/ws": "^8.18.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "prettier": "~3.3.3",
+    "prettier-plugin-tailwindcss": "~0.6.5",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.3",
+    "typescript": "^5"
+  }
+}
